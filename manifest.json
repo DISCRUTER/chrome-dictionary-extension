@@ -1,0 +1,25 @@
+{
+    "mainfest_version" : 1,
+    "name" : "Chrome Dictionary Extension",
+    "description" : "Highlight the word and see the truth.",
+    "version" : "1.0",
+    "icons" : {},
+    "permissions" : [
+        "activeTabs",
+        "storage",
+        "scripting"
+    ],
+    "background" : {
+        "service_worker" : "background.js"
+    },
+    "content_scripts" : [
+        {
+            "matches" : ["<all_urls>"],
+            "js" : ["content.js"]
+        }
+    ],
+    "action" : {
+        "default_title" : "Ddfine a word.",
+        "default_popup" : "popup.html"
+    }
+}
