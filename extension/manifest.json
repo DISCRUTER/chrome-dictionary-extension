@@ -5,12 +5,11 @@
     "version" : "1.0",
     "icons" : {},
     "permissions" : [
-        "activeTabs",
         "storage",
         "scripting"
     ],
     "action" : {
         "default_title" : "Define a word.",
-        "default_popup" : "popup.html"
+        "default_popup" : "popup/popup.html"
     }
 }
